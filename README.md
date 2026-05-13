@@ -34,7 +34,7 @@ Currently, I am working as a Web Developer and Researcher at Antarpath, an initi
 
 <p align="center">
 <a href="https://ahnaf-bd.netlify.app/">
-  <img src="PORTFOLIO_IMG" width="80%" />
+  <img src="https://res.cloudinary.com/debvc8qzf/image/upload/v1778594052/Untitled_design_2_hb7nah.png" width="80%" />
 </a>
 </p>
 

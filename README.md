@@ -1,63 +1,62 @@
 # AHNAF.BD - Portfolio & CO2-FEED Showcase
 
-Welcome to the official repository for **AHNAF.BD**. This project is a minimalist, high-end photography portfolio and interactive social feed platform (CO2-FEED), designed for showcasing professional visual storytelling.
+Welcome to the official repository for **AHNAF.BD**. This project is a high-end, minimalist photography portfolio and interactive social feed platform (CO2-FEED).
 
 ---
 
-## 🚀 Live Demo
-**Check out the live application here:**
-[https://ais-pre-xhdivver3k26tcskgklqfx-104778091129.asia-southeast1.run.app](https://ais-pre-xhdivver3k26tcskgklqfx-104778091129.asia-southeast1.run.app)
+## 🚀 Experience the Live App
+[**View the full interactive website here**](https://ais-pre-xhdivver3k26tcskgklqfx-104778091129.asia-southeast1.run.app)
 
 ---
 
-## 📸 Interface Showcase
-*(Take screenshots of your app and add them here to showcase your beautiful UI!)*
+## 🗺️ Project Site Architecture (A-Z)
 
-### 1. Minimalist Photography Gallery
-![Gallery Interface](screenshot-gallery.png)
-*Categorized street, concert, and event photography.*
+This documentation catalogs the functional elements of the website.
 
-### 2. Interactive CO2-FEED
-![Feed UI](screenshot-feed.png)
-*A dedicated space for sharing media, PDFs, and insights with the community.*
+### 1. Public Interface
+- **Landing Page:** Minimalist hero, fluid animations, navigation to all sub-pages.
+- **Photography Gallery:** Categorized (Street, Concert, Event) gallery with light-box functionality and responsive grid layout.
+- **CO2-FEED:** Interactive social platform. Users can:
+    - View posts (Images, PDF, Audio).
+    - Engage (Like functionality).
+    - Discuss (Nested comment threading and replies).
+- **Projects Showcase:** Dynamic, filterable portfolio view.
+- **Collaboration Portal:** Dedicated landing for project inquiries.
 
-### 3. Admin Dashboard
-![Admin Portal](screenshot-admin.png)
-*Secure, robust management portal with photo uploading, project management, and post creation.*
-
----
-
-## ✨ Key Features
-- **Photography Gallery:** Dynamic, categorized photography displaying high-quality content.
-- **CO2-FEED Platform:** An interactive feed system supporting images, voice notes, PDFs, and external links for deeper audience engagement.
-- **Admin Portal:** A secure, password-protected dashboard to manage the entire portfolio, feed, and profile in real-time.
-- **Responsive Design:** Polished, minimalist aesthetic optimized for all screen sizes.
-- **Robust Security:** Row Level Security (RLS) policies implemented via Supabase for data integrity.
+### 2. Admin Management Portal (`/admin`)
+- **Secure Authentication:** Restricted to `ahnafmahidul32@gmail.com` via Supabase Auth + Email Verification.
+- **Dashboard Hub:**
+  - **Messages:** View contact form submissions.
+  - **Inquiries:** View collaboration inquiries.
+  - **Projects:** Create, list, and delete portfolio projects.
+  - **Photography:** Categorized photo management with direct Cloudinary uploads.
+  - **CO2-FEED:** Manage posts (Create, Upload media, Add Links/Captions).
+  - **Profile:** Manage admin avatar for feed post authoring.
 
 ---
 
 ## 🛠 Tech Stack
-- **Frontend:** React, TypeScript, Tailwind CSS, Framer Motion
-- **Backend/Auth:** Supabase (Database & Authentication)
-- **Media Hosting:** Cloudinary
-- **Icons:** Lucide React
+- **Framework:** React 18+ with Vite (TypeScript).
+- **Styling:** Tailwind CSS (Utility-first, responsive design).
+- **Animations:** Framer Motion (`motion/react`) for layout and interaction.
+- **Database/Auth:** Supabase (Real-time DB, Auth, Row Level Security).
+- **Media Hosting:** Cloudinary (Dynamic assets, images, audio, PDF).
 
 ---
 
-## ⚙️ How to set up locally
-1. Clone the repo:
-   ```bash
-   git clone [your-repo-link]
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Set up your `.env` with Supabase and Cloudinary credentials.
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+## 📦 How to Deploy (Your own GitHub)
+
+To show this exact website to everyone from your GitHub repository:
+
+1.  **Clone this repository:** `git clone [YOUR_REPO_URL]`
+2.  **Environment Setup:** Create a `.env` file with your credentials:
+    - `VITE_SUPABASE_URL`
+    - `VITE_SUPABASE_ANON_KEY`
+3.  **Deploy for Free:**
+    - Go to your repository settings on GitHub.
+    - Navigate to **"Pages"**.
+    - Under "Build and deployment", select **"GitHub Actions"**.
+    - This will host your site automatically at `https://[username].github.io/[repo-name]/`.
 
 ---
 *Built with passion for visual storytelling.*
